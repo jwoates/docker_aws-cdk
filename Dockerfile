@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ENV AWS_CDK_VERSION=1.104.0
+ENV AWS_CDK_VERSION=1.105.0
 
 RUN apk -v --no-cache --update add \
         nodejs \
@@ -8,8 +8,6 @@ RUN apk -v --no-cache --update add \
         python3 \
         ca-certificates \
         groff \
-        less \
-        bash \
         make \
         curl \
         wget \
@@ -20,7 +18,6 @@ RUN apk -v --no-cache --update add \
 
 VOLUME [ "/root/.aws" ]
 VOLUME [ "/aws" ]
-
 VOLUME ["/usr/lib/python3.7/site-packages/"]
 
 WORKDIR /aws
