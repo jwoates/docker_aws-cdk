@@ -10,3 +10,7 @@
 `docker run --rm -it -v $HOME/.aws:/root/.aws -v $(pwd):/aws:rw my_cdk --version`
 
 `docker run --rm -it -v $HOME/.aws:/root/.aws -v $(pwd):/aws:rw my_cdk init app --language typescript`
+
+
+### use this image in your project
+`docker pull allibubba/amazon-cdk`
